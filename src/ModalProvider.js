@@ -16,16 +16,14 @@ const ModaProvider = ({ children }) => {
   return (
     <ModalContext.Provider value={contextValue}>
       {children}
-      <For of={Object.keys(modalsConfig)} each="modal">
-        <If condition={modalsConfig[modal].isOpen}>
-          {React.createElement(modalsConfig[modal].component, {
-            ...modalsConfig[modal].data,
-            key: modal,
-            isOpen: modalsConfig[modal].isOpen,
-            onClose: () => hideModal(modal),
-          })}
-        </If>
-      </For>
+      {Object.keys(modalsConfig).map((modal) => (
+        modalsConfig[modal].isOpen && React.createElement(modalsConfig[modal].component, {
+          ...modalsConfig[modal].data,
+          key: modal,
+          isOpen: modalsConfig[modal].isOpen,
+          onClose: () => hideModal(modal),
+        })
+      ))}
     </ModalContext.Provider>
   );
 };
