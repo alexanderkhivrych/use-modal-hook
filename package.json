@@ -1,0 +1,50 @@
+{
+  "name": "use-modal-hook",
+  "version": "1.0.0",
+  "description": "use-modal-hook",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderkhivrych/use-modal-hook.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "modal",
+    "modal-hook"
+  ],
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.5.4",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-react": "^7.0.0-beta.42",
+    "babel-core": "6",
+    "babel-loader": "^8.0.5",
+    "parcel-bundler": "^1.6.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^3.3.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "alexander.khivrych",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexanderkhivrych/use-modal-hook/issues"
+  },
+  "homepage": "https://github.com/alexanderkhivrych/use-modal-hook#readme"
+}
