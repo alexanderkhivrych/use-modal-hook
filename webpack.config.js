@@ -1,4 +1,5 @@
 const path = require('path');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
@@ -8,6 +9,7 @@ module.exports = {
     library: '',
     libraryTarget: 'commonjs'
   },
+  externals: [nodeExternals()],
   module: {
     rules: [
       {
