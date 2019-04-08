@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "use-modal-hook",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
   "scripts": {
     "build": "./node_modules/.bin/webpack --mode=production"
   },
