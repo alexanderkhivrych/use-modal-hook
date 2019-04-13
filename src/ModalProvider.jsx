@@ -5,7 +5,10 @@ const ModalProvider = ({ children }) => {
   const [modalsConfig, setConfig] = useState({});
   const hideModal = useCallback((modalKey, onClose) => {
     setConfig({ [modalKey]: { ...modalsConfig[modalKey], isOpen: false } });
-    onClose();
+    
+    if (onClose) {
+      onClose();
+    }
   }, []);
   const showModal = useCallback((modalKey, component, modalData) => {
     setConfig({ [modalKey]: { isOpen: true, component, data: modalData } });
