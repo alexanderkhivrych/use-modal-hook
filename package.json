@@ -12,9 +12,12 @@
   },
   "keywords": [
     "react",
-    "hooks",
+    "hook",
+    "react-hooks",
+    "use-modal",
     "modal",
-    "modal-hook"
+    "modal-hook",
+    "react-modal-hook"
   ],
   "dependencies": {
     "react": "^16.8.6",
