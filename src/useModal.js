@@ -1,4 +1,4 @@
-import { useContext, useMemo, useEffect, useCallback } from 'react';
+import { useContext, useMemo, useCallback } from 'react';
 import ModalContext from './ModalContext';
 
 const generateModalKey = (() => {
