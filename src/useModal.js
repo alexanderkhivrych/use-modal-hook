@@ -1,4 +1,4 @@
-import { useContext, useMemo, useCallback } from 'react';
+import { useContext, useMemo, useEffect, useCallback } from 'react';
 import ModalContext from './ModalContext';
 
 const generateModalKey = (() => {
@@ -13,7 +13,7 @@ function useModal(component, data, onClose) {
   const showModal = useCallback((modalData) => context.showModal(key, component,  modalData instanceof Event ? data : {...data,...modalData }), [data]);
   const hideModal = useCallback(() => context.hideModal(key, onClose), []);
 
-  useEffect(() =>  () => {
+  useEffect(() => () => {
       hideModal()
   }, [])
 
