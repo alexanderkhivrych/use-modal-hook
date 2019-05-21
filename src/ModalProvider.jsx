@@ -20,10 +20,10 @@ const ModalProvider = ({ children }) => {
       {children}
       {Object.keys(modalsConfig).map((modalKey) => (
         modalsConfig[modalKey].isOpen && React.createElement(modalsConfig[modalKey].component, {
+          onClose: () => hideModal(modalKey),
           ...modalsConfig[modalKey].data,
           key: modalKey,
           isOpen: modalsConfig[modalKey].isOpen,
-          onClose: () => hideModal(modalKey),
         })
       ))}
     </ModalContext.Provider>
