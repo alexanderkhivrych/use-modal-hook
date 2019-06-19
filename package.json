@@ -1,6 +1,6 @@
 {
   "name": "use-modal-hook",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "use-modal-hook",
   "main": "dist/index.js",
   "scripts": {
