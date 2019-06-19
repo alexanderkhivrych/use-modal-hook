@@ -10,8 +10,11 @@ const generateModalKey = (() => {
 function useModal(component, data, onClose) {
   const key = useMemo(generateModalKey, []);
   const context = useContext(ModalContext);
-  const showModal = useCallback((modalData) => context.showModal(key, component,  modalData instanceof Event ? data : {...data,...modalData }), [data]);
-  const hideModal = useCallback(() => context.hideModal(key, onClose), []);
+  const showModal = useCallback(
+    modalData => context.showModal(key, component, modalData instanceof Event ? data : { ...data, ...modalData }),
+    [data, context]
+  );
+  const hideModal = useCallback(() => context.hideModal(key, onClose), [context]);
 
   return [showModal, hideModal];
 }
