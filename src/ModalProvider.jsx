@@ -4,15 +4,15 @@ import ModalContext from './ModalContext';
 const ModalProvider = ({ children }) => {
   const [modalsConfig, setConfig] = useState({});
   const hideModal = useCallback((modalKey, onClose) => {
-    setConfig({ [modalKey]: { ...modalsConfig[modalKey], isOpen: false } });
+    setConfig({ ...modalsConfig, [modalKey]: { ...modalsConfig[modalKey], isOpen: false } });
     
     if (onClose) {
       onClose();
     }
-  }, []);
+  }, [modalsConfig]);
   const showModal = useCallback((modalKey, component, modalData) => {
-    setConfig({ [modalKey]: { isOpen: true, component, data: modalData } });
-  }, []);
+    setConfig({ ...modalsConfig, [modalKey]: { isOpen: true, component, data: modalData } });
+  }, [modalsConfig]);
   const contextValue = useMemo(() => ({ showModal, hideModal }), []);
 
   return (
