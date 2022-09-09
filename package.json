@@ -20,14 +20,14 @@
     "react-modal-hook"
   ],
   "dependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0 ",
+    "react-dom": "^18.2.0 "
   },
   "peerDependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.13.16",
@@ -35,9 +35,9 @@
     "@babel/preset-react": "^7.13.13",
     "babel-loader": "^8.2.2",
     "parcel-bundler": "^1.6.2",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^3.3.0",
-    "webpack-node-externals": "^1.7.2"
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-node-externals": "^3.0.0"
   },
   "files": [
     "dist"
