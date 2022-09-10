@@ -1,7 +1,7 @@
 {
   "name": "use-modal-hook",
   "version": "2.1.0",
-  "description": "use-modal-hook",
+  "description": "React hook for controlling modal components",
   "main": "dist/index.js",
   "scripts": {
     "build": "./node_modules/.bin/webpack --mode=production"
@@ -12,12 +12,14 @@
   },
   "keywords": [
     "react",
+    "use-modal",
+    "react-modal-hook",
     "hook",
     "react-hooks",
-    "use-modal",
     "modal",
     "modal-hook",
-    "react-modal-hook"
+    "use-modal-hook",
+    "useModal"
   ],
   "dependencies": {
     "prop-types": "^15.8.1",
