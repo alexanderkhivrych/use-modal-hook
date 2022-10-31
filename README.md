@@ -7,11 +7,17 @@
     <sup>
     <br />
     <br />
-    <a href="https://www.npmjs.com/package/use-modal-hook">
+    <a href="https://www.npmjs.com/package/use-modal-hook" target="_blank">
       <img src="https://img.shields.io/npm/v/use-modal-hook.svg" alt="npm package" />
     </a>
-    <a href="https://www.npmjs.com/package/use-modal-hook">
+    <a href="https://www.npmjs.com/package/use-modal-hook" target="_blank">
       <img src="https://img.shields.io/npm/dm/use-modal-hook.svg" alt="npm downloads" />
+    </a>
+      <a href="https://www.npmjs.com/package/use-modal-hook" target="_blank">
+      <img src="https://img.shields.io/npm/dm/use-modal-hook.svg" alt="npm downloads" />
+    </a>
+    <a href="https://github.com/alexanderkhivrych/use-modal-hook" target="_blank">
+      <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" alt="Maintenance" />
     </a>
   </sup>
 </div>
