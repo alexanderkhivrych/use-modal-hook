@@ -7,6 +7,9 @@
     <sup>
     <br />
     <br />
+    <a href="https://github.com/alexanderkhivrych/use-modal-hook/pulls" target="_blank">
+      <img src="https://img.shields.io/badge/PRs-welcome-green.svg" alt="PRs welcome" />
+    </a>
     <a href="https://www.npmjs.com/package/use-modal-hook" target="_blank">
       <img src="https://img.shields.io/npm/v/use-modal-hook.svg" alt="npm package" />
     </a>
